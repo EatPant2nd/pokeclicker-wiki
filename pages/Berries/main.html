@@ -40,7 +40,7 @@
                     <!-- ko if: Wiki.farm.getPrimaryMutation($data.type) -->
                     <tr>
                         <td>Mutation Chance</td>
-                        <td data-bind="text: (Wiki.farm.getPrimaryMutation($data.type)._mutationChance * 100) + '%'"></td>
+                        <td data-bind="text: (Wiki.farm.getPrimaryMutation($data.type)._mutationChance * 100).toLocaleString() + '%'"></td>
                     </tr>
                     <!-- /ko -->
                     <tr>

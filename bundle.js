@@ -77729,6 +77729,13 @@ window.Wiki = {
   ...require('./navigation'),
 }
 
+$(function() {
+  const now = new Date();
+  if (now.getMonth() == 3 && now.getDate() == 1) {
+    document.body.classList.add('prank');
+  }
+})
+
 },{"../pokeclicker/package.json":502,"./components":503,"./datatables":504,"./discord":505,"./game":506,"./gameHelper":507,"./markdown-renderer":514,"./navigation":515,"./notifications":516,"./pages/dealChains":517,"./pages/dreamOrbs":518,"./pages/dungeonTokens":519,"./pages/dungeons":520,"./pages/farm":521,"./pages/farmSimulator":522,"./pages/items":523,"./pages/oakItems":524,"./pages/pokemon":525,"./pages/shopMon":526,"./typeahead":528}],509:[function(require,module,exports){
 const { md } = require('./markdown-renderer');
 

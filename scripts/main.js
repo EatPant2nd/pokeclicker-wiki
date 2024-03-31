@@ -23,3 +23,10 @@ window.Wiki = {
   getDealChains: require('./pages/dealChains').getDealChains,
   ...require('./navigation'),
 }
+
+$(function() {
+  const now = new Date();
+  if (now.getMonth() == 3 && now.getDate() == 1) {
+    document.body.classList.add('prank');
+  }
+})

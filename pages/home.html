@@ -1,3 +1,18 @@
+<center>
+    <button id="help" class="btn btn-secondary btn-lg" onclick="help()">MAKE IT STOP!</button>
+    <script>
+        function help() {
+            // Remove the 'prank' class from the body
+            document.body.classList.remove("prank");
+            document.getElementById('help').style.display = 'none';      
+        }
+        if(!document.body.classList.contains('prank')){
+            document.getElementById('help').style.display = 'none';
+        }
+    </script>
+</center>
+
+<br/>
 <center><h4>Maps & Navigation</h4></center>
 <div class="d-grid gap-2 d-sm-flex flex-wrap justify-content-sm-center align-items-center pb-2">
     <a href="#!Regions" class="btn btn-primary text-nowrap">Regions</a>
@@ -56,18 +71,3 @@
     <a href="#!Challenge_Modes" class="btn btn-primary text-nowrap">Challenge Modes</a>
     <a href="#!Wiki_Guide" class="btn btn-primary text-nowrap">Wiki Guide</a>
 </div>
-
-<br/>
-<center>
-    <button id="help" class="btn btn-primary btn-lg" onclick="help()">MAKE IT STOP!</button>
-    <script>
-        function help() {
-            // Remove the 'prank' class from the body
-            document.body.classList.remove("prank");
-            document.getElementById('help').style.display = 'none';      
-        }
-        if(!document.body.classList.contains('prank')){
-            document.getElementById('help').style.display = 'none';
-        }
-    </script>
-</center>
